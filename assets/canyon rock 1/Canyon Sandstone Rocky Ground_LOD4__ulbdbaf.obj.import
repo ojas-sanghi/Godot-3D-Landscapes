@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Canyon Sandstone Rocky Ground_LOD4__ulbdbaf.obj-44ca9106ccc2679c91fd8a6cec69a7db.mesh"
+
+[deps]
+
+files=[ "res://.import/Canyon Sandstone Rocky Ground_LOD4__ulbdbaf.obj-44ca9106ccc2679c91fd8a6cec69a7db.mesh" ]
+
+source_file="res://assets/canyon rock 1/Canyon Sandstone Rocky Ground_LOD4__ulbdbaf.obj"
+dest_files=[ "res://.import/Canyon Sandstone Rocky Ground_LOD4__ulbdbaf.obj-44ca9106ccc2679c91fd8a6cec69a7db.mesh", "res://.import/Canyon Sandstone Rocky Ground_LOD4__ulbdbaf.obj-44ca9106ccc2679c91fd8a6cec69a7db.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
