@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Canyon Sandstone Cliff_LOD2__uk4paip.obj-e04d5a38770c555f19a2ab080f9a32ee.mesh"
+
+[deps]
+
+files=[ "res://.import/Canyon Sandstone Cliff_LOD2__uk4paip.obj-e04d5a38770c555f19a2ab080f9a32ee.mesh" ]
+
+source_file="res://assets/cliff 2/Canyon Sandstone Cliff_LOD2__uk4paip.obj"
+dest_files=[ "res://.import/Canyon Sandstone Cliff_LOD2__uk4paip.obj-e04d5a38770c555f19a2ab080f9a32ee.mesh", "res://.import/Canyon Sandstone Cliff_LOD2__uk4paip.obj-e04d5a38770c555f19a2ab080f9a32ee.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
