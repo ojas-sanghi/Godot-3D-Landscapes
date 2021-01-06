@@ -1,0 +1,18 @@
+[remap]
+
+importer="hterrain_packed_texture_importer"
+type="StreamTexture"
+path.s3tc="res://.import/Landscape_slot0_normal_roughness.packed_tex-01267cc18b58df86ba32b3df7067f466.s3tc.stex"
+path.etc2="res://.import/Landscape_slot0_normal_roughness.packed_tex-01267cc18b58df86ba32b3df7067f466.etc2.stex"
+
+[deps]
+
+source_file="res://beach mountain/terrain data/Landscape_slot0_normal_roughness.packed_tex"
+dest_files=[ "res://.import/Landscape_slot0_normal_roughness.packed_tex-01267cc18b58df86ba32b3df7067f466.s3tc.stex", "res://.import/Landscape_slot0_normal_roughness.packed_tex-01267cc18b58df86ba32b3df7067f466.etc2.stex" ]
+
+[params]
+
+compress/mode=2
+flags/repeat=1
+flags/filter=true
+flags/mipmaps=true

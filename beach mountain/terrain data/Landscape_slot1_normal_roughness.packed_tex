@@ -1,0 +1,8 @@
+{
+	"contains_albedo": false,
+	"resolution": 512,
+	"src": {
+		"a": "res://beach mountain/assets/beach sand/Roughness_4K__tdsmeeko.jpg",
+		"rgb": "res://beach mountain/assets/beach sand/Normal_4K__tdsmeeko.jpg"
+	}
+}

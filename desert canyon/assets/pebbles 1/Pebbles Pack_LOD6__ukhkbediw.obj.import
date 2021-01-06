@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Pebbles Pack_LOD6__ukhkbediw.obj-15e7789f4aef5793174224edf554816c.mesh"
+
+[deps]
+
+files=[ "res://.import/Pebbles Pack_LOD6__ukhkbediw.obj-15e7789f4aef5793174224edf554816c.mesh" ]
+
+source_file="res://desert canyon/assets/pebbles 1/Pebbles Pack_LOD6__ukhkbediw.obj"
+dest_files=[ "res://.import/Pebbles Pack_LOD6__ukhkbediw.obj-15e7789f4aef5793174224edf554816c.mesh", "res://.import/Pebbles Pack_LOD6__ukhkbediw.obj-15e7789f4aef5793174224edf554816c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

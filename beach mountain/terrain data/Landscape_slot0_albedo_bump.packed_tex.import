@@ -1,0 +1,18 @@
+[remap]
+
+importer="hterrain_packed_texture_importer"
+type="StreamTexture"
+path.s3tc="res://.import/Landscape_slot0_albedo_bump.packed_tex-d2c7f6f00a37b21f5f0c2ac7cbc00185.s3tc.stex"
+path.etc2="res://.import/Landscape_slot0_albedo_bump.packed_tex-d2c7f6f00a37b21f5f0c2ac7cbc00185.etc2.stex"
+
+[deps]
+
+source_file="res://beach mountain/terrain data/Landscape_slot0_albedo_bump.packed_tex"
+dest_files=[ "res://.import/Landscape_slot0_albedo_bump.packed_tex-d2c7f6f00a37b21f5f0c2ac7cbc00185.s3tc.stex", "res://.import/Landscape_slot0_albedo_bump.packed_tex-d2c7f6f00a37b21f5f0c2ac7cbc00185.etc2.stex" ]
+
+[params]
+
+compress/mode=2
+flags/repeat=1
+flags/filter=true
+flags/mipmaps=true

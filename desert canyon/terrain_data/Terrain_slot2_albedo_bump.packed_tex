@@ -1,0 +1,8 @@
+{
+	"contains_albedo": true,
+	"resolution": 512,
+	"src": {
+		"a": "#ff888888",
+		"rgb": "res://assets/canyon rocky ground soft/Albedo_2K__ulrkbiqdy.jpg"
+	}
+}

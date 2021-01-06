@@ -1,0 +1,36 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path.s3tc="res://.import/Displacement_4K__uk4paip.exr-7e8c30308f203c22e81d7f77b1790bb9.s3tc.stex"
+path.etc2="res://.import/Displacement_4K__uk4paip.exr-7e8c30308f203c22e81d7f77b1790bb9.etc2.stex"
+metadata={
+"imported_formats": [ "s3tc", "etc2" ],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://desert canyon/assets/cliff 2/Displacement_4K__uk4paip.exr"
+dest_files=[ "res://.import/Displacement_4K__uk4paip.exr-7e8c30308f203c22e81d7f77b1790bb9.s3tc.stex", "res://.import/Displacement_4K__uk4paip.exr-7e8c30308f203c22e81d7f77b1790bb9.etc2.stex" ]
+
+[params]
+
+compress/mode=2
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=true
+flags/filter=true
+flags/mipmaps=true
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0

@@ -1,0 +1,8 @@
+{
+	"contains_albedo": true,
+	"resolution": 512,
+	"src": {
+		"a": "#ff888888",
+		"rgb": "res://beach mountain/assets/stony steppe/Albedo_4K__ulgmbhwn.jpg"
+	}
+}

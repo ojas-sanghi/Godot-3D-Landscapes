@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Canyon Sandstone Rock_LOD0__uk4pehu.obj-a969cdf0d7fdd337b1af4667b995491d.mesh"
+
+[deps]
+
+files=[ "res://.import/Canyon Sandstone Rock_LOD0__uk4pehu.obj-a969cdf0d7fdd337b1af4667b995491d.mesh" ]
+
+source_file="res://desert canyon/assets/canyon rock 2/Canyon Sandstone Rock_LOD0__uk4pehu.obj"
+dest_files=[ "res://.import/Canyon Sandstone Rock_LOD0__uk4pehu.obj-a969cdf0d7fdd337b1af4667b995491d.mesh", "res://.import/Canyon Sandstone Rock_LOD0__uk4pehu.obj-a969cdf0d7fdd337b1af4667b995491d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

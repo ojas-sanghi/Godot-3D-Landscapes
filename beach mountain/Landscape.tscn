@@ -1,0 +1,74 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://addons/zylann.hterrain/hterrain_texture_set.gd" type="Script" id=1]
+[ext_resource path="res://addons/zylann.hterrain/hterrain.gd" type="Script" id=2]
+[ext_resource path="res://src/Player/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://beach mountain/water/Water.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Player Camera Thing.gd" type="Script" id=5]
+[ext_resource path="res://beach mountain/terrain data/data.hterrain" type="Resource" id=6]
+[ext_resource path="res://beach mountain/terrain data/Landscape_slot0_normal_roughness.packed_tex" type="Texture" id=7]
+[ext_resource path="res://beach mountain/terrain data/Landscape_slot1_normal_roughness.packed_tex" type="Texture" id=8]
+[ext_resource path="res://beach mountain/terrain data/Landscape_slot3_normal_roughness.packed_tex" type="Texture" id=9]
+[ext_resource path="res://beach mountain/terrain data/Landscape_slot2_normal_roughness.packed_tex" type="Texture" id=10]
+[ext_resource path="res://beach mountain/terrain data/Landscape_slot2_albedo_bump.packed_tex" type="Texture" id=11]
+[ext_resource path="res://beach mountain/terrain data/Landscape_slot3_albedo_bump.packed_tex" type="Texture" id=12]
+[ext_resource path="res://beach mountain/terrain data/Landscape_slot1_albedo_bump.packed_tex" type="Texture" id=13]
+[ext_resource path="res://beach mountain/terrain data/Landscape_slot0_albedo_bump.packed_tex" type="Texture" id=14]
+[ext_resource path="res://beach mountain/water/Water.material" type="Material" id=15]
+
+[sub_resource type="ProceduralSky" id=1]
+sky_horizon_color = Color( 0.305882, 0.54902, 0.741176, 1 )
+sky_curve = 1.25359
+sun_color = Color( 0.854902, 0.921569, 0.0627451, 1 )
+sun_energy = 2.0
+
+[sub_resource type="Environment" id=2]
+background_mode = 2
+background_sky = SubResource( 1 )
+tonemap_mode = 2
+tonemap_white = 4.0
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 1 )
+mode = 0
+textures = [ [ ExtResource( 14 ), ExtResource( 13 ), ExtResource( 11 ), ExtResource( 12 ) ], [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 10 ), ExtResource( 9 ) ] ]
+
+[sub_resource type="CylinderMesh" id=4]
+material = ExtResource( 15 )
+top_radius = 30.0
+bottom_radius = 30.0
+height = 2.5
+
+[node name="Landscape" type="Spatial"]
+script = ExtResource( 5 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 76.7157, 0, 116.41 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 2 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="WorldEnvironment"]
+transform = Transform( 1, 0, 0, 0, -0.5, 0.866025, 0, -0.866025, -0.5, 0, 0, 0 )
+shadow_enabled = true
+
+[node name="HTerrain" type="Spatial" parent="."]
+script = ExtResource( 2 )
+_terrain_data = ExtResource( 6 )
+chunk_size = 32
+collision_enabled = true
+collision_layer = 1
+collision_mask = 1
+shader_type = "Classic4Lite"
+custom_shader = null
+custom_globalmap_shader = null
+texture_set = SubResource( 3 )
+shader_params/u_ground_uv_scale = 50.0
+shader_params/u_depth_blending = true
+shader_params/u_triplanar = true
+shader_params/u_tile_reduction = Plane( 0, 0, 0, 0 )
+
+[node name="Water" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.142, -1.7314, 111.886 )
+mesh = SubResource( 4 )
+material/0 = null

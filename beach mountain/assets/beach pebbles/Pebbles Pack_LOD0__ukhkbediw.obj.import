@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Pebbles Pack_LOD0__ukhkbediw.obj-18d3a6bd494e4338a394ae9c8ea6aa35.mesh"
+
+[deps]
+
+files=[ "res://.import/Pebbles Pack_LOD0__ukhkbediw.obj-18d3a6bd494e4338a394ae9c8ea6aa35.mesh" ]
+
+source_file="res://beach mountain/assets/beach pebbles/Pebbles Pack_LOD0__ukhkbediw.obj"
+dest_files=[ "res://.import/Pebbles Pack_LOD0__ukhkbediw.obj-18d3a6bd494e4338a394ae9c8ea6aa35.mesh", "res://.import/Pebbles Pack_LOD0__ukhkbediw.obj-18d3a6bd494e4338a394ae9c8ea6aa35.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

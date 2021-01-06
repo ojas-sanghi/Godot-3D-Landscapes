@@ -99,7 +99,7 @@ _global_script_class_icons={
 [application]
 
 config/name="3D Landscape"
-run/main_scene="res://Terrain.tscn"
+run/main_scene="res://beach mountain/Landscape.tscn"
 config/icon="res://icon.png"
 
 [display]
@@ -109,7 +109,7 @@ window/size/height=1080
 
 [editor_plugins]
 
-enabled=PoolStringArray( "lod", "waterways", "zylann.hterrain" )
+enabled=PoolStringArray( "lod", "scatter", "waterways", "zylann.hterrain" )
 
 [input]
 
@@ -142,7 +142,3 @@ move_front={
 [physics]
 
 3d/physics_engine="Bullet"
-
-[rendering]
-
-environment/default_environment="res://default_env.tres"

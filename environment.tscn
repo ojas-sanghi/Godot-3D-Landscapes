@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="ProceduralSky" id=2]
+sky_horizon_color = Color( 0.305882, 0.54902, 0.741176, 1 )
+sky_curve = 1.25359
+sun_color = Color( 0.854902, 0.921569, 0.0627451, 1 )
+sun_energy = 2.0
+
+[sub_resource type="Environment" id=3]
+background_mode = 2
+background_sky = SubResource( 2 )
+tonemap_mode = 2
+tonemap_white = 4.0
+
+[node name="WorldEnvironment" type="WorldEnvironment"]
+environment = SubResource( 3 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 185.64, 549.166, -380.501 )
+shadow_enabled = true

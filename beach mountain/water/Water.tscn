@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://beach mountain/water/Water.material" type="Material" id=1]
+
+[sub_resource type="PlaneMesh" id=1]
+material = ExtResource( 1 )
+size = Vector2( 128, 128 )
+subdivide_width = 256
+subdivide_depth = 256
+
+[node name="Water" type="MeshInstance"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.10169, 0 )
+mesh = SubResource( 1 )
+material/0 = ExtResource( 1 )

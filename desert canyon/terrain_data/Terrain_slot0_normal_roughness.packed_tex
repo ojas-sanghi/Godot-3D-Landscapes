@@ -1,0 +1,8 @@
+{
+	"contains_albedo": false,
+	"resolution": 512,
+	"src": {
+		"a": "res://assets/canyon rocky ground hard/Roughness_2K__umdiagtew.jpg",
+		"rgb": "res://assets/canyon rocky ground hard/Normal_2K__umdiagtew.jpg"
+	}
+}
