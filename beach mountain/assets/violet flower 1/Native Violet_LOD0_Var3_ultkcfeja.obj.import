@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Native Violet_LOD0_Var3_ultkcfeja.obj-5334d911d17b0a90922f0a608ac4f93c.mesh"
+
+[deps]
+
+files=[ "res://.import/Native Violet_LOD0_Var3_ultkcfeja.obj-5334d911d17b0a90922f0a608ac4f93c.mesh" ]
+
+source_file="res://beach mountain/assets/violet flower 1/Native Violet_LOD0_Var3_ultkcfeja.obj"
+dest_files=[ "res://.import/Native Violet_LOD0_Var3_ultkcfeja.obj-5334d911d17b0a90922f0a608ac4f93c.mesh", "res://.import/Native Violet_LOD0_Var3_ultkcfeja.obj-5334d911d17b0a90922f0a608ac4f93c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

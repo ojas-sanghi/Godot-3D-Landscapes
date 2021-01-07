@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://addons/zylann.hterrain/hterrain_texture_set.gd" type="Script" id=1]
 [ext_resource path="res://addons/zylann.hterrain/hterrain.gd" type="Script" id=2]
@@ -15,6 +15,9 @@
 [ext_resource path="res://beach mountain/terrain data/Landscape_slot1_albedo_bump.packed_tex" type="Texture" id=13]
 [ext_resource path="res://beach mountain/terrain data/Landscape_slot0_albedo_bump.packed_tex" type="Texture" id=14]
 [ext_resource path="res://beach mountain/water/Water.material" type="Material" id=15]
+[ext_resource path="res://assets/billboardgrass0002.png" type="Texture" id=16]
+[ext_resource path="res://addons/zylann.hterrain/hterrain_detail_layer.gd" type="Script" id=17]
+[ext_resource path="res://addons/zylann.hterrain/tools/icons/icon_detail_layer_node.svg" type="Texture" id=18]
 
 [sub_resource type="ProceduralSky" id=1]
 sky_horizon_color = Color( 0.305882, 0.54902, 0.741176, 1 )
@@ -54,6 +57,7 @@ shadow_enabled = true
 
 [node name="HTerrain" type="Spatial" parent="."]
 script = ExtResource( 2 )
+ambient_wind = 0.5
 _terrain_data = ExtResource( 6 )
 chunk_size = 32
 collision_enabled = true
@@ -63,10 +67,26 @@ shader_type = "Classic4Lite"
 custom_shader = null
 custom_globalmap_shader = null
 texture_set = SubResource( 3 )
-shader_params/u_ground_uv_scale = 50.0
-shader_params/u_depth_blending = true
+shader_params/u_ground_uv_scale = 5.0
+shader_params/u_depth_blending = false
 shader_params/u_triplanar = true
 shader_params/u_tile_reduction = Plane( 0, 0, 0, 0 )
+
+[node name="HTerrainDetailLayer" type="Spatial" parent="HTerrain"]
+script = ExtResource( 17 )
+__meta__ = {
+"_editor_icon": ExtResource( 18 )
+}
+layer_index = 0
+texture = ExtResource( 16 )
+view_distance = 500.0
+custom_shader = null
+density = 4.0
+instance_mesh = null
+shader_params/u_globalmap_tint_bottom = null
+shader_params/u_globalmap_tint_top = null
+shader_params/u_bottom_ao = null
+shader_params/u_instance_scale = Vector3( 1.5, 1.5, 1.5 )
 
 [node name="Water" parent="." instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.142, -1.7314, 111.886 )
